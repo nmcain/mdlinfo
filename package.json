@@ -1,0 +1,25 @@
+{
+  "name": "MaterialDesign",
+  "productName": "Material Design",
+  "version": "1.0.0",
+  "description": "The best way to acess your material desing resources, all in one application",
+  "main": "main.js",
+  "electron": "^1.8.4",
+  "electron-packager": "^8.1.0",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/nmcain/mdinfo",
+  "keywords": [
+    "design",
+    "material design",
+    "html",
+    "app",
+    "electron"
+  ],
+  "author": "Noah Cain",
+  "license": "GNU GPL",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
