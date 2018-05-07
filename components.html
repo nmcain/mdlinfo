@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Material Design - Components</title>
+<link rel="stylesheet" href="cedit/styles.css">
+
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" />
+<script src="cedit/mdl/material.min.js"></script>
+	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+      <script src="default.js"></script>
+
+      <style>
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:#eee
+    
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #BDBDBD;
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2196F3;
+}
+</style>
+      
+	<style type="text/css">
+	body{
+	  background:#eee;
+	}
+					body,div,mdl-layout-title,html,header{
+				font-family: 'robotolight';
+                        -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+							}
+        .header{
+            -webkit-app-region: drag;
+            
+        }
+        .header2{
+            -webkit-app-region: drag;
+            width:455px;
+                height:60px;
+          
+        }
+        .nav{
+            -webkit-app-region: no-drag;
+            color:#fff
+        }
+        .no{
+            -webkit-app-region: no-drag;
+        }
+        #close-btn{
+            cursor:pointer;
+        }
+        #min-btn{
+            cursor:pointer;
+        }
+        #demo-show-toast{
+            cursor:pointer;
+        }
+        .pgtitle{
+            font-family: 'robotolight';
+        }
+		</style>
+  </head>
+  <body>
+      <div align="left">
+          
+          
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="header mdl-layout-title pgtitle">Components</span>
+
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="header2 mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation">
+       <a class="mdl-navigation__link" id="demo-show-toast"><i class="nav material-icons">info_outline</i></a>
+          <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<script>
+(function() {
+  'use strict';
+  window['counter'] = 0;
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'mdlinfo was developed by Noah Cain under the GNU GPL v3'};
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+</script>
+        <a class="mdl-navigation__link" id="min-btn"><i class="nav material-icons">remove</i></a>
+        <a class="mdl-navigation__link" id="close-btn"><i class="nav material-icons">close</i></a>
+      </nav>
+    </div>
+  </header>
+  <div class="no mdl-layout__drawer">
+    <span class="mdl-layout-title">Components</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html">Home</a>
+      <a class="mdl-navigation__link" href="mailto:nmcain@gmail.com">Colors</a>
+        <a class="mdl-navigation__link" href="mailto:nmcain@gmail.com">Icons</a>
+        
+      <a class="mdl-navigation__link" id="demo-show-toast">About</a>
+      <a class="mdl-navigation__link" id="min-btn">Hide</a>
+      <a class="mdl-navigation__link" id="close-btn">Quit</a>
+        <a class="mdl-navigation__link" href="mailto:nmcain@gmail.com">Contact Developers</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content" align="center">
+      
+      
+      
+      
+      
+      
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
+        <!-- Square card -->
+<style>
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+  margin-top:25px;
+  
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('assets/angular.png') bottom right 50% no-repeat #263238
+;
+    background-size:180px 200px;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">AngularJS</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+View resources for programming with AngularJS.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      GET STARTED
+    </a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Square card -->
+<style>
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title2 {
+  color: #fff;
+  background:
+    url('assets/new.png') bottom right 50% no-repeat #263238;
+     background-size:220px 200px;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card__title2 mdl-card--expand">
+    <h2 class="mdl-card__title-text">Flutter</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+  View resources for creating and using Flutter applications.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get started
+    </a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <style>
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title3 {
+  color: #fff;
+  background:
+    url('assets/html.png') bottom right 50% no-repeat #263238;
+     background-size:220px 200px;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card__title3 mdl-card--expand">
+    <h2 class="mdl-card__title-text">Web</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Use material design in all of you web projects for a beautiful and smooth experience across all platforms.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <style>
+.demo-card-square.mdl-card {
+  width: 500px;
+  height: 320px;
+  margin-bottom:10px;
+}
+.demo-card-square > .mdl-card__title4 {
+  color: #fff;
+  background:
+    url('assets/mdl.jpg') bottom right 50% no-repeat #263238;
+     background-size:100% 100%;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title mdl-card__title4 mdl-card--expand">
+    <h2 class="mdl-card__title-text">Demos</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Try out all of the material components and find inspiration with these demos.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      TRY NOW
+    </a>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+      
+      
+      </div>
+  </main>
+</div>
+          
+          
+          
+</div>
+      
+      
+      
+      
+    
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
